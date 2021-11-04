@@ -1,0 +1,13 @@
+{
+    "begin": 0,
+    "end": 120000,
+    "direction": "p",
+    "initial_value": 562,
+    "step_value": [0, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000],
+    "abs_tol": 2,
+    "rel_tol": 0.001,
+    "output": "output",
+    "if_water": false,
+    "verbose": true
+}
+
