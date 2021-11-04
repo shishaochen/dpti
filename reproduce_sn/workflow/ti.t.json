@@ -1,0 +1,27 @@
+{
+    "equi_conf": null,
+    "copies": [
+        1,
+        1,
+        1
+    ],
+    "model": "../graph.pb",
+    "mass_map": [
+        118.71
+    ],
+    "nsteps": 300000,
+    "timestep": 0.002,
+    "ens": null,
+    "path": "t",
+    "temp_seq": [
+        "800:900:10",
+        "900"
+    ],
+    "pres": null,
+    "tau_t": 0.2,
+    "tau_p": 2.0,
+    "thermo_freq": 10,
+    "stat_skip": 5000,
+    "stat_bsize": 1000,
+    "if_meam": false
+}

@@ -1,0 +1,9 @@
+{
+  "target_temp": 900,
+  "target_pres": 100000,
+  "work_base_dir": "./",
+  "ti_path": "t",
+  "conf_lmp":"../liquid.lmp",
+  "ens": "npt",
+  "if_liquid": true
+}

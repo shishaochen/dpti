@@ -1,0 +1,14 @@
+{
+    "machine": {
+        "batch_type": "shell",
+        "context_type": "lazylocal",
+        "local_root" : "./"
+    },
+    "resources": {
+        "number_node": 1,
+        "cpu_per_node": 4,
+        "gpu_per_node": 1,
+        "queue_name": "T4_4_15",
+        "group_size": 3
+    }
+}
