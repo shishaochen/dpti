@@ -239,8 +239,8 @@ def make_tasks(iter_name, jdata, if_meam=None):
         if 'nvt' in ens and path == 't' :
             lmp_str \
                 = _gen_lammps_input(os.path.basename(equi_conf),
-                                    mass_map, 
-                                    model,
+                                    mass_map,
+                                    os.path.basename(model),
                                     nsteps, 
                                     timestep,
                                     ens,
@@ -258,8 +258,8 @@ def make_tasks(iter_name, jdata, if_meam=None):
         elif 'npt' in ens and (path == 't' or path == 't-ginv'):
             lmp_str \
                 = _gen_lammps_input(os.path.basename(equi_conf),
-                                    mass_map, 
-                                    model,
+                                    mass_map,
+                                    os.path.basename(model),
                                     nsteps, 
                                     timestep,
                                     ens,
@@ -278,8 +278,8 @@ def make_tasks(iter_name, jdata, if_meam=None):
         elif 'npt' in ens and path == 'p' :
             lmp_str \
                 = _gen_lammps_input(os.path.basename(equi_conf),
-                                    mass_map, 
-                                    model,
+                                    mass_map,
+                                    os.path.basename(model),
                                     nsteps, 
                                     timestep,
                                     ens,
