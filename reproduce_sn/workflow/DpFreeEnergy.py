@@ -23,9 +23,9 @@ def get_empty_submission(job_work_dir):
 
     with open(os.path.join(work_base_dir, 'machine.json'), 'r') as f:
         mdata = json.load(f)
+    mdata['machine']['local_root'] = os.path.abspath('./')
     machine = Machine.load_from_dict(mdata['machine'])
     resources = Resources.load_from_dict(mdata['resources'])
-
     submission = Submission(
         work_base=job_work_dir, 
         resources=resources, 
